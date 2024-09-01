@@ -2,6 +2,7 @@
     flex-wrap: wrap;
 }
 .home-container{
-    max-height: calc(100vh - 92px);
+    min-height: calc(100vh - 86px);
+    max-height: calc(100vh - 86px);
     overflow-y: scroll;
 }

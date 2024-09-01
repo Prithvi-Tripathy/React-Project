@@ -1,5 +1,6 @@
 .header-row{
-    background-color: rgba(255, 166, 0, 0.226);
+    background-color: #4CAF50;
+    border: 1px solid #09790d;
 }
 
 .custom-nav-items {
