@@ -2,7 +2,7 @@ import './App.css';
 import Layout from './Layout/Layout';
 const App = ()=>{
   return (
-    <div className="App">
+    <div className="App" >
      <Layout />
     </div>
   );

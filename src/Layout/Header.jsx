@@ -1,20 +1,28 @@
 import React from "react";
 import "./HeaderCSS.css"
+
 const Header = () => {
   return (
-    <div className="mx-2">
-      <div className="row align-items-center">
+    <div className="">
+      <div className="row align-items-center header-row">
         <div className="col-4">
-        <img className="logo-img" src="https://media.istockphoto.com/id/1435983029/vector/food-delivery-logo-images.jpg?s=612x612&w=0&k=20&c=HXPxcjOxUiW4pMW1u9E0k2dJYQOU37a_0qZAy3so8fY=" alt="" />
-            Food App
+          <img
+            className="logo-img"
+            src={require("../images/icons/output-onlinepngtools.png")}
+            alt=""
+          />
+          Food App
         </div>
         <div className="col-8">
-          <ul className="nav d-flex justify-content-end">
-          <li className="nav-item custom-nav-items">Home</li>
+          <ul className="nav d-flex justify-content-center">
+          <li className="nav-item custom-nav-items" onClick={()=>{}}>Home</li>
             <li className="nav-item custom-nav-items">About us</li>
             <li className="nav-item custom-nav-items">Contact</li>
-            <li className="nav-item custom-nav-items">cart</li>
+            <li className="nav-item custom-nav-items">Cart
+             <span className="cart-number">5</span>
+             </li>
           </ul>
+          
         </div>
       </div>
     </div>

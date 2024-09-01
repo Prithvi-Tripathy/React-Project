@@ -1,0 +1,14 @@
+.restro-card{
+    border: 1px solid grey;
+    background-color: rgba(128, 128, 128, 0.24);
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.restro-card img{
+    width: 125px;
+}
+.restro-content{
+    font-size: 12px;
+}

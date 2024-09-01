@@ -1,8 +1,47 @@
-.custom-nav-items{
-    margin-right: 10px;
-    font-size: 12px;
+.header-row{
+    background-color: rgba(255, 166, 0, 0.226);
 }
+
+.custom-nav-items {
+    margin: 0px 20px;
+    font-size: 12px;
+    cursor: pointer;
+    position: relative;;
+}
+.custom-nav-items:hover{
+    color: orange;
+}
+
 .logo-img{
     width: 50px;
     height: 100%;
+    cursor: pointer;
 }
+.cart{
+    position: relative;
+}
+.cart-background{
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+    border-radius: 20px;
+    position: absolute;
+    height: 10px;
+    top: 0;
+    right: -2px;
+    width: 5px;
+   
+}
+
+ .cart-number{
+    font-size: 7px;
+    position: absolute;
+    border: solid red;
+    border-radius: 60%;
+    height: 12px;
+    width: fit-content;
+    color: white;
+    background: red;
+    top: -3px;
+    right: -8px;
+ }

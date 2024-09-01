@@ -1,0 +1,7 @@
+.restaurant-container{
+    flex-wrap: wrap;
+}
+.home-container{
+    max-height: calc(100vh - 92px);
+    overflow-y: scroll;
+}

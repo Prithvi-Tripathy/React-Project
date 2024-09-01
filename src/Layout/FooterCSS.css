@@ -1,0 +1,27 @@
+.Footer-container{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    
+  }
+  
+  .footer-row{
+    color: white;
+    background-color: #222;
+    padding: 10px;
+
+  }
+
+  .footer span {
+    margin: 0;
+    padding: 0;
+  }
+  .footer-nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  
+  .footer-nav a:hover {
+    text-decoration: underline;
+  }
