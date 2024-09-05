@@ -1,7 +1,10 @@
 import React from "react";
 import "./HeaderCSS.css"
 
-const Header = () => {
+const Header = ({ onData }) => {
+  const sendDataToParent = (data) => {
+    onData(data);
+  };
   return (
     <div className="">
       <div className="row align-items-center header-row">
@@ -14,11 +17,11 @@ const Header = () => {
           Food App
         </div>
         <div className="col-8">
-          <ul className="nav d-flex justify-content-center">
-          <li className="nav-item custom-nav-items" onClick={()=>{}}>Home</li>
-            <li className="nav-item custom-nav-items">About us</li>
-            <li className="nav-item custom-nav-items">Contact</li>
-            <li className="nav-item custom-nav-items">Cart
+          <ul className="nav d-flex justify-content-end">
+          <li className="nav-item custom-nav-items" onClick={()=>sendDataToParent("Home")}>Home</li>
+            <li className="nav-item custom-nav-items" onClick={()=>sendDataToParent("About")}>About us</li>
+            <li className="nav-item custom-nav-items" onClick={()=>sendDataToParent("Contact")}>Contact</li>
+            <li className="nav-item custom-nav-items" onClick={()=>sendDataToParent("Cart")}>Cart
              <span className="cart-number">5</span>
              </li>
           </ul>

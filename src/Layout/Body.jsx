@@ -1,11 +1,14 @@
 import React from "react";
 import Home from "../components/Home"
-// import AboutUs from "../components/AboutUs";
-const Body=()=>{
+import AboutUs from "../components/AboutUs";
+import Contact from "../components/Contact";
+const Body=(props)=>{
+  console.log("props",props)
     return (
         <div>
-          <Home />
-          {/* <AboutUs /> */}
+          {(props.childData === 'Home')?<Home />:""}
+          {(props.childData === 'About')?<AboutUs />:""}
+          {(props.childData === 'Contact')?<Contact />:""}
         </div>
     );
 }

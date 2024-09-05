@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./HomeCSS.css";
 import RestroCard from "./RestroCard";
+import Carousel from "./Carousel";
 const Home = () => {
   const [restroList, setRestroList] = useState([]);
 
@@ -21,14 +22,65 @@ const Home = () => {
 
   return (
     <div className="container-fluid home-container">
-      <div>
+
+      <div className="row">
+        <div className="col">
+          <Carousel />
+        </div>
+
+      </div>
+      <div className="d-flex my-2 gap-3">
         <button
+        className="filter-button"
           onClick={() => {
             setRestroList(restroList.filter((item) => item.info.avgRating > 4));
             //  restroList= restroList.filter((item)=>item.info.avgRating > 4 )
             console.log("restroListJS", restroList);
           }}
         >Filter</button>
+        <button
+        className="filter-button"
+          onClick={() => {
+            setRestroList(restroList.filter((item) => item.info.avgRating > 4));
+            //  restroList= restroList.filter((item)=>item.info.avgRating > 4 )
+            console.log("restroListJS", restroList);
+          }}
+        >Sort By</button>
+        <button
+        className="filter-button"
+          onClick={() => {
+            setRestroList(restroList.filter((item) => item.info.avgRating > 4));
+            //  restroList= restroList.filter((item)=>item.info.avgRating > 4 )
+            console.log("restroListJS", restroList);
+          }}
+        >Fast Delivery
+        </button>
+        <button
+        className="filter-button"
+          onClick={() => {
+            setRestroList(restroList.filter((item) => item.info.avgRating > 4));
+            //  restroList= restroList.filter((item)=>item.info.avgRating > 4 )
+            console.log("restroListJS", restroList);
+          }}
+        >New on Swiggy
+        </button>
+        <button
+        className="filter-button"
+          onClick={() => {
+            setRestroList(restroList.filter((item) => item.info.avgRating > 4));
+            //  restroList= restroList.filter((item)=>item.info.avgRating > 4 )
+            console.log("restroListJS", restroList);
+          }}
+        >Ratings 4.0+
+        </button>
+        <button
+        className="filter-button"
+          onClick={() => {
+            setRestroList(restroList.filter((item) => item.info.avgRating > 4));
+            //  restroList= restroList.filter((item)=>item.info.avgRating > 4 )
+            console.log("restroListJS", restroList);
+          }}
+        >Pure Veg</button>
       </div>
 
       <div className="d-flex restaurant-container">

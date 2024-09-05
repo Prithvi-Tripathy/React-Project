@@ -6,3 +6,11 @@
     max-height: calc(100vh - 86px);
     overflow-y: scroll;
 }
+
+.filter-button{
+    border: 1px solid lightgreen;
+    padding: 4px 10px;
+    border-radius: 25px;
+    font-size: 10px;
+    background-color: white;
+}

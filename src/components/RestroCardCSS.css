@@ -1,4 +1,4 @@
-.restro-card{
+/* .restro-card{
     border: 1px solid grey;
     background-color: #8bc34a83;
     width: 200px;
@@ -17,4 +17,63 @@
 }
 .restro-content{
     font-size: 12px;
-}
+} */
+
+.restro-card {
+    cursor: pointer;
+    width: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: rgba(144, 238, 144, 0.264);
+  }
+  
+  .restro-card:hover {
+    transform: translateY(-7px);
+  }
+  
+  .restro-image img {
+    width: 100%;
+    padding: 10px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .restro-details {
+    padding: 10px;
+  }
+  
+  .restro-name {
+    font-size: 0.75em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .restro-cuisine {
+    font-size: 0.75em;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  .restro-rating {
+    display: flex;
+    align-items: center;
+    font-size: 0.75em;
+    color: #FFA500;
+  }
+  
+  .view-menu-btn {
+    padding: 4px 4px;
+    font-size: 0.60em;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-menu-btn:hover {
+    background-color: #218838;
+  }
